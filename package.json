@@ -20,7 +20,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "prepublishOnly": "npm run build" 
+    "prepublishOnly": "npm run build",
+    "tsc-check": "tsc --noEmit"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.100.5",

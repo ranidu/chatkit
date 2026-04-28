@@ -1,8 +1,11 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { ChatKit, ChatProvider } from "../src";
 
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <h1>Chatkit Dev</h1>
+    <ChatProvider>
+      <ChatKit />
+    </ChatProvider>
   </React.StrictMode>,
-)
+);
